@@ -2,7 +2,7 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import connexion from './config/connexion';
+import connexion from './config/connexion.js';
 
 dotenv.config();
 
@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-ENV = dotenv.config().parsed;
+const ENV = dotenv.config().parsed;
 const PORT = ENV.PORT || 8000;
 
 app.get('/', (req, res) => {

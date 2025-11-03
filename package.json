@@ -1,11 +1,15 @@
 {
+  "type": "module",
   "name": "projet_programmation_web_serveur",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Maksim2711/Projet_programmation_web_serveur.git"

@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const ENV = dotenv.config().parsed;
-const PORT = ENV.PORT || 8000;
+const PORT = ENV.PORT || 5000;
 
 app.get('/', (req, res) => {
   res.send('Bienvenue sur le serveur Express!');

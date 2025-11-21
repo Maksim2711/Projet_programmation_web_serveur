@@ -7,6 +7,7 @@ const Client = sequelize.define("Client", {
   address: { type: DataTypes.TEXT },
   phone: { type: DataTypes.STRING(20) },
   email: { type: DataTypes.STRING(100), unique: true },
-});
+  password: { type: DataTypes.STRING(255), allowNull: false },
+}  );
 
 export default Client;

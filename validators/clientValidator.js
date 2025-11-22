@@ -40,4 +40,3 @@ export const updateClientValidation = [
     body("password").optional()
     .isLength({ min: 6 }).withMessage("Le mot de passe doit contenir au moins 6 caractères.") 
 ];
-

@@ -21,4 +21,4 @@ export const updateContractValidation= [
     body("totalAmount").optional()
         .notEmpty().withMessage("Le montant total ne peut pas être vide.")
         .isFloat({ gt: 0 }).withMessage("Le montant total doit être un nombre positif."),
-];  
+];
